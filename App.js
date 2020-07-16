@@ -5,6 +5,7 @@ import {
   ImageComponent,
   TextInput,
   Text,
+  Switch,
 } from "react-native";
 
 import WelcomeScreen from "./app/screens/WelcomeScreen";
@@ -18,13 +19,15 @@ import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
+import AppPicker from "./app/components/AppPicker";
 
 export default function App() {
-  const [firstName, setFirstName] = useState("");
+  const [isNew, setIsNew] = useState(false);
 
   return (
     <Screen>
-      <AppTextInput placeholder="Username" icon="email" />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
 }
