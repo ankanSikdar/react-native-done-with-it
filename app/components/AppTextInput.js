@@ -15,7 +15,9 @@ const AppTextInput = ({ icon, ...otherProps }) => {
           style={styles.icon}
         />
       )}
-      <TextInput style={defaultStyles.text} {...otherProps} />
+      <View style={{ flex: 1 }}>
+        <TextInput style={defaultStyles.text} {...otherProps} />
+      </View>
     </View>
   );
 };
