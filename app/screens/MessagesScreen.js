@@ -9,14 +9,18 @@ import ListItemDeleteAction from "../components/ListItemDeleteAction";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis, culpa officiis expedita laboriosam quod libero unde quisquam. Accusamus, provident. Aliquid eius sint earum. Nobis ea totam quia dolorem officiis!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis, culpa officiis expedita laboriosam quod libero unde quisquam. Accusamus, provident. Aliquid eius sint earum. Nobis ea totam quia dolorem officiis!",
     image: require("../assets/mosh.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis, culpa officiis expedita laboriosam quod libero unde quisquam. Accusamus, provident. Aliquid eius sint earum. Nobis ea totam quia dolorem officiis!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis, culpa officiis expedita laboriosam quod libero unde quisquam. Accusamus, provident. Aliquid eius sint earum. Nobis ea totam quia dolorem officiis!",
     image: require("../assets/mosh.jpg"),
   },
 ];
