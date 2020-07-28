@@ -28,7 +28,7 @@ const menuItems = [
 
 const AccountScreen = ({ navigation }) => {
   return (
-    <Screen style={styles.screen}>
+    <View style={styles.screen}>
       <View style={styles.container}>
         <ListItem
           title="Mosh Hamedami"
@@ -59,7 +59,7 @@ const AccountScreen = ({ navigation }) => {
         title="Log Out"
         IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
       />
-    </Screen>
+    </View>
   );
 };
 

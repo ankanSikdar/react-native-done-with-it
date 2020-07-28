@@ -35,7 +35,7 @@ const MessagesScreen = () => {
   };
 
   return (
-    <Screen>
+    <View>
       <FlatList
         data={messages}
         keyExtractor={(message) => message.id.toString()}
@@ -63,7 +63,7 @@ const MessagesScreen = () => {
           ]);
         }}
       />
-    </Screen>
+    </View>
   );
 };
 
