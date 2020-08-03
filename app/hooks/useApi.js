@@ -12,11 +12,12 @@ export default useApi = (apiFunc) => {
 
     if (!response.ok) {
       setError(true);
-      return;
+      return response;
     }
 
     setError(false);
     setData(response.data);
+    return response;
   };
 
   return { data, error, loading, request };
