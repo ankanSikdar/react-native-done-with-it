@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useNetInfo } from "@react-native-community/netinfo";
-import JwtDecode from "jwt-decode";
 import { AppLoading } from "expo";
 
 import navigationTheme from "./app/navigation/navigationTheme";
@@ -16,17 +15,16 @@ export default function App() {
   const [user, setUser] = useState();
   const [isReady, setIsReady] = useState(false);
 
-  const restoreToken = async () => {
-    const token = await authStorage.getToken();
-    if (!token) {
-      return;
+  const restoreUser = async () => {
+    const user = await authStorage.getUser();
+    if (user) {
+      setUser(user);
     }
-    setUser(JwtDecode(token));
   };
 
   if (!isReady) {
     return (
-      <AppLoading startAsync={restoreToken} onFinish={() => setIsReady(true)} />
+      <AppLoading startAsync={restoreUser} onFinish={() => setIsReady(true)} />
     );
   }
 
